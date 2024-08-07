@@ -1,6 +1,6 @@
  import java.util.Scanner;  
     
-public class BankAccount  
+public class Atminterface  
 {     
     public static void main(String args[] )  
     {   int balance = 1000, withdraw, deposit;  
@@ -29,26 +29,23 @@ public class BankAccount
             else  
             {   System.out.println("Insufficient Balance");  }  
             System.out.println("");  
-            break;  
-   
+                    break;  
                     case 2:  
                     System.out.print("Enter money to be deposited:");  
                     deposit = sc.nextInt();  
                     balance = balance + deposit;  
                     System.out.println("Your Money has been successfully depsited");  
                     System.out.println("");  
-            break;  
-   
+                    break;  
                     case 3:    
                     System.out.println("Balance : "+balance);  
                     System.out.println("");  
                     break;  
-   
                     case 4:  
                     System.out.println("Thank you for using the ATM. Goodbye!");
                     sc.close();
                     return;
-                default:
+                    default:
                     System.out.println("Invalid choice. Please try again."); 
                 }  
             }
