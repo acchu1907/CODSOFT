@@ -82,7 +82,7 @@ public class StudentManagementSystemUI {
     private final  StudentManagementSystem studentManagementSystem;
     private final  Scanner scanner;
 
-    public StudentManagementSystemUI(StudentManagementSystem studentManagementSystem) {
+    private StudentManagementSystemUI(StudentManagementSystem studentManagementSystem) {
         this.studentManagementSystem = studentManagementSystem;
         this.scanner = new Scanner(System.in);
     }
