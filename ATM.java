@@ -17,35 +17,35 @@ public class ATM
 
             int choice = sc.nextInt();  
                switch(choice) { 
-                case 1 :
-                System.out.print("Enter money to be withdrawn:");  
-                withdraw = sc.nextInt();  
-                      
-            if(balance >= withdraw)  
-            {  balance = balance - withdraw;  
-                System.out.println("Please collect your money");  
-            }  
-            else  
-            {   System.out.println("Insufficient Balance");  }  
-            System.out.println("");  
-                    break;  
-                    case 2:  
-                    System.out.print("Enter money to be deposited:");  
-                    deposit = sc.nextInt();  
-                    balance = balance + deposit;  
-                    System.out.println("Your Money has been successfully depsited");  
-                    System.out.println("");  
-                    break;  
-                    case 3:    
-                    System.out.println("Balance : "+balance);  
-                    System.out.println("");  
-                    break;  
-                    case 4:  
-                    System.out.println("Thank you for using the ATM. Goodbye!");
-                    sc.close();
-                    return;
-                    default:
-                    System.out.println("Invalid choice. Please try again."); 
+                case 1 -> {
+                    System.out.print("Enter money to be withdrawn:");
+                    withdraw = sc.nextInt();
+                    
+                    if(balance >= withdraw)
+                    {  balance = balance - withdraw;
+                    System.out.println("Please collect your money");
+                    }
+                    else
+                    {   System.out.println("Insufficient Balance");  }
+                    System.out.println("");
+                    }
+                    case 2 -> {
+                        System.out.print("Enter money to be deposited:");
+                        deposit = sc.nextInt();
+                        balance = balance + deposit;
+                        System.out.println("Your Money has been successfully depsited");
+                        System.out.println("");
+                    }
+                    case 3 -> {
+                        System.out.println("Balance : "+balance);
+                        System.out.println("");
+                    }
+                    case 4 -> {
+                        System.out.println("Thank you for using the ATM. Goodbye!");
+                        sc.close();
+                        return;
+                    }
+                    default -> System.out.println("Invalid choice. Please try again."); 
                 }  
             }
         }  
